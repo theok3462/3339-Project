@@ -1,3 +1,4 @@
+// Author: Theo Kliewer
 module nand_gate(
     input wire a,
     input wire b,

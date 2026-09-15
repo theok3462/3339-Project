@@ -1,3 +1,4 @@
+// Author: Theo Kliewer
 `timescale 1ns/1ps
 
 module nand_gate_tb;
