@@ -1,6 +1,9 @@
-// NAND Gate Module
-// TODO: Implement NAND gate logic
+module nand_gate(
+    input wire a,
+    input wire b,
+    output wire y
+);
 
-module nand_gate();
-  // Placeholder for NAND gate implementation
+assign y = ~(a & b);
+
 endmodule
