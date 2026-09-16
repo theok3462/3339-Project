@@ -1,6 +1,11 @@
-// NOR Gate Module
-// TODO: Implement NOR gate logic
+// Author Juan Liscano
 
-module nor_gate();
-  // Placeholder for NOR gate implementation
-endmodule
+// 1-bit NOR Gate
+module nor_gate(
+	input wire  a,
+	input wire  b,
+	output wire y
+);
+
+	assign y = ~(a | b);
+endmodule 
