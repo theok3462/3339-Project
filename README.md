@@ -56,7 +56,7 @@ Maroon Group (3-person team)
 ### Work Division
 
 * Theo Kliewer: NOT and NAND modules, testbenches, and waveforms
-* Teammate 1 (name pending): NOR and 4-bit shift modules, testbenches, and waveforms
+* Juan Liscano: NOR and 4-bit shift modules, testbenches, and waveforms
 * Teammate 2 (name pending): report assembly, final organization, and submission preparation
 
 ### Getting Started
