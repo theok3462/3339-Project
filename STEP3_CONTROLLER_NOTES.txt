@@ -1,0 +1,53 @@
+
+CS 3339 Project - Step 3 Controller Notes
+
+New file: Verilog/step2/alu4_controller.v
+
+The controller combines all 12 operations from Step 2.
+Each operation remains a separate Verilog module.
+
+Inputs:
+A, B - 4-bit operands
+opcode - 4-bit operation selector
+cin - carry input
+
+Outputs:
+X - primary 4-bit result
+Y - secondary 4-bit result
+cout - carry output
+
+Opcode Table:
+0000 - AND
+0001 - NAND
+0010 - OR
+0011 - NOR
+0100 - XOR
+0101 - XNOR
+0110 - NOT
+0111 - SHIFT
+1000 - ADD
+1001 - SUBTRACT
+1010 - MULTIPLY
+1011 - DIVIDE
+
+1100 through 1111 are unused.
+
+For ordinary addition, cin = 0.
+For ordinary subtraction, cin = 1.
+
+Multiplication uses X for the lower four bits
+and Y for the upper four bits.
+
+Division uses X for the quotient
+and Y for the remainder.
+
+Shifting uses X for the shifted result
+and Y for shifted-out bits.
+
+The controller uses a combinational case
+statement to select the operation according
+to the opcode. All original Step 2 modules
+remain independent and unchanged.
+
+Final integrated tests and waveforms
+are still required for Step 3.
